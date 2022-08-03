@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    .blink {
+        animation: blinker 1.5s linear infinite;
+        color: rgb(154, 248, 15);
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+    @keyframes blinker {
+        50% {
+            opacity: 0;
+        }
+    }
+</style>
+<style>
+  .blink1 {
+      animation: blinker 1.5s linear infinite;
+      color: rgb(86, 206, 59);
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      text-align:center
+  }
+  @keyframes blinker {
+      50% {
+          opacity: 0;
+      }
+  }
+</style>
+
+ <style>  
+  #myDIV {
+    height:700px; 
+    padding: 15px;
+    min-height: 100%;
+    min-width: 100%;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-blend-mode: multiply;
+    border-color: turquoise;
+    background-image: url("https://cdn.wallpapersafari.com/11/39/TtgoIV.jpg");
+  }
+  </style>
+  </head>
+<body>
+  <div id="myDIV">
+    <h1 class="blink1" style="color: rgb(247, 246, 242);"> PLEASE REGISTER HERE</h1>
+<form action="/register" method="post">
+    <label for="username" style="color: white;">Username</label><br>
+    <input type="text" name="username" required><br>
+
+    <label for="password" style="color: white;">Password</label><br>
+    <input type="password" name="password" requried><br></br>
+
+    <label for="password" style="color:white ;"> Confirm Password</label><br>
+    <input type="password" name="confirm_password" required><br></br>
+
+
+
+
+    <input type="submit" name="submit" value="submit">
+</form>
+</div>
+</body>
